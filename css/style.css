@@ -39,6 +39,18 @@ body {
   line-height: 1.5;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.d-color {
+  color: var(--dark-gray-blue);
+}
+
+.l-color {
+  color: var(--gray-blue);
+}
+
 .component {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,18 +72,90 @@ body {
 }
 
 .component .content {
-  padding: 2rem 1.5rem;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
 }
 
 .component .content h1 {
   margin-bottom: 1rem;
   font-size: 15px;
   font-weight: 700;
-  color: var(--dark-gray-blue);
 }
 
 .component .content p {
-  color: var(--gray-blue);
   font-weight: 500;
+}
+
+.component .information {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.component .information .icon {
+  -webkit-box-flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
+}
+
+.component .information .icon img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.component .information .info-name {
+  -webkit-box-flex: 65%;
+      -ms-flex: 65%;
+          flex: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component .information .name {
+  color: var(--dark-gray-blue);
+  font-weight: 700;
+  margin-bottom: .2rem;
+}
+
+.component .information .date {
+  color: var(--gray-blue);
+}
+
+.component .information .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.component .information .share a {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+  padding: .7rem;
+  border-radius: 50%;
+  background-color: var(--light-gray-blue);
 }
 /*# sourceMappingURL=style.css.map */
