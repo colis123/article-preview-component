@@ -60,6 +60,8 @@ body {
     width: 100%;
     object-fit: cover;
     height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
 
@@ -141,6 +143,7 @@ body {
   width: 100%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  display: none;
 
 
 
