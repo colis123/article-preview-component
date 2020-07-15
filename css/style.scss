@@ -50,11 +50,13 @@ body {
 
 
 .component {
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   margin: 1rem;
   border-radius: 10px;
   background: white;
+  position: relative;
 
   .image img {
     width: 100%;
@@ -132,6 +134,50 @@ body {
 
 }
 
+.desktop-share {
+  position: absolute;
+  top: 110px;
+  right: -61px;
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-gray-blue);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  display: none;
+
+
+  ul li {
+    display: inline-block;
+  }
+
+  .share-name {
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--gray-blue);
+    flex: 40%;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    flex: 30%;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: var(--dark-gray-blue);
+    top: 45px;
+    right: 105px;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+  }
+
+}
+
 //Hover state
 
 .share-items {
@@ -144,7 +190,6 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: none;
-
 
 
 
@@ -184,4 +229,22 @@ body {
   }
 
 
+}
+
+.share-closed {}
+
+
+
+@media only screen and (min-width: 768px) {
+  .component {
+    flex-direction: row;
+    max-width: 700px;
+
+    .image img {
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
+    }
+  }
 }
