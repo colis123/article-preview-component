@@ -294,6 +294,14 @@ body {
   background-color: var(--light-gray-blue);
 }
 
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
 @media only screen and (min-width: 768px) {
   .component {
     -webkit-box-orient: horizontal;

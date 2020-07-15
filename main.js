@@ -3,7 +3,6 @@ const shareTabClosed = document.querySelector('.share-items');
 
 const desktopShare = document.querySelector('.desktop-share');
 const shareIcon = document.querySelector('.share');
-const closeIcon = document.querySelector('.share-closed');
 
 
 
@@ -25,10 +24,9 @@ shareTabClosed.addEventListener('click', function () {
 
 
 shareIcon.addEventListener('click', function (e) {
-  //esktopShare.style.display = 'flex';
-  if (e.target.classList.contains('share-icon')) {
-    console.log('anchor')
-  }
+  if (window.innerWidth > 767) {
 
+    desktopShare.classList.toggle('show');
+  }
 
 });

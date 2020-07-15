@@ -231,7 +231,11 @@ body {
 
 }
 
-.share-closed {}
+.show {
+  display: flex;
+  transition: all 1s ease-in;
+}
+
 
 
 
