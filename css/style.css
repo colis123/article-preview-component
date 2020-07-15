@@ -52,6 +52,7 @@ body {
 }
 
 .component {
+  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,6 +63,7 @@ body {
   margin: 1rem;
   border-radius: 10px;
   background: white;
+  position: relative;
 }
 
 .component .image img {
@@ -69,6 +71,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .component .content {
@@ -157,5 +161,160 @@ body {
   padding: .7rem;
   border-radius: 50%;
   background-color: var(--light-gray-blue);
+}
+
+.desktop-share {
+  position: absolute;
+  top: 110px;
+  right: -61px;
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--dark-gray-blue);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  display: none;
+}
+
+.desktop-share ul li {
+  display: inline-block;
+}
+
+.desktop-share .share-name {
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--gray-blue);
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+.desktop-share .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+.desktop-share::after {
+  position: absolute;
+  content: '';
+  background: var(--dark-gray-blue);
+  top: 45px;
+  right: 105px;
+  height: 10px;
+  width: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.share-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--dark-gray-blue);
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+}
+
+.share-items ul li {
+  display: inline-block;
+}
+
+.share-items .share-name {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--gray-blue);
+}
+
+.share-items .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+}
+
+.share-items .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.share-items .share a {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7rem;
+  border-radius: 50%;
+  background-color: var(--light-gray-blue);
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .component {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 700px;
+  }
+  .component .image img {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
